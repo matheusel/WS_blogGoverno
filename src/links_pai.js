@@ -9,8 +9,7 @@ axios.get(urlPai).then(resp => {
     const dados = []
     $('a[class="summary url"]').each((i,e) => {
         const link = $(e).attr('href')
-        const dado = { link }
-        dados.push(dado)
+        dados.push(link)
     });
     console.log(dados);
 })
